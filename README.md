@@ -7,7 +7,9 @@ The `sistedes` LaTeX class is licensed under the same terms than the LLNCS LaTeX
 
 ## How to use this template?
 
-**Copy `sistedes.cls`, `llncs.cls` and `splncs04.bst` in a directory that is searched by LaTeX, e.g. either your texmf tree or the local directory with your main LaTeX file.**
+If your LaTeX distribution already contains the `llncs` LaTeX class among its pre-installed packages (because, for instance, you are using [Overleaf](https://overleaf.com)), simply put a copy of `sistedes.cls` together  with your main LaTeX file and use the `\documentclass[runningheads]{sistedes}` LaTeX command at the beginning of your document.
+
+Otherwise, copy all three files `sistedes.cls`, `llncs.cls` and `splncs04.bst` in a directory that is searched by LaTeX, e.g. either your texmf tree or the local directory with your main LaTeX file and use the `\documentclass[runningheads]{sistedes}` LaTeX command similarly.
 
 Yoy may want to use any of `ejemplo-articulo-regular-en.tex`, `ejemplo-articulo-regular-es.tex`, `ejemplo-relevante-revista.tex` or `ejemplo-relevante-congreso.tex` as a starting point for your contribution.
 
