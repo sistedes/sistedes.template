@@ -34,7 +34,7 @@
 
 % Configure watermark
 \RequirePackage[usenames,dvipsnames]{xcolor}
-\RequirePackage[type={CC}, modifier={by-nc-nd}, version={4.0}]{doclicense}
+\RequirePackage[type={CC}, modifier={by-nc-nd}, version={4.0}, hyperxmp=false]{doclicense}
 \RequirePackage{draftwatermark}
 \AtBeginDocument{
 \SetWatermarkVerCenter{\dimexpr\paperheight-\baselineskip-2em}
