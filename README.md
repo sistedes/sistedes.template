@@ -5,6 +5,12 @@ This LaTeX template should be used for the camera ready version of papers to be 
 The `sistedes` LaTeX class does not modify the LLNCS class definition, but instead, it relies on it without modifying any source files.
 The `sistedes` LaTeX class is licensed under the same terms than the LLNCS LaTeX class file (CC BY-SA 4.0).
 
+## How to use this template?
+
+**Copy `sistedes.cls`, `llncs.cls` and `splncs04.bst` in a directory that is searched by LaTeX, e.g. either your texmf tree or the local directory with your main LaTeX file.**
+
+## Repository contents
+
 This repository consists of the following files:
 
 * `sistedes.cls`: main class file for the Sistedes digital library LaTeX template.
