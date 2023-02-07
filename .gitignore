@@ -1,0 +1,7 @@
+sharelatex-git.py
+sharelatex-git
+.sharelatex-git
+*.aux
+*.log
+*.out
+*-eps-converted-to.pdf
