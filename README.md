@@ -9,6 +9,8 @@ The `sistedes` LaTeX class is licensed under the same terms than the LLNCS LaTeX
 
 **Copy `sistedes.cls`, `llncs.cls` and `splncs04.bst` in a directory that is searched by LaTeX, e.g. either your texmf tree or the local directory with your main LaTeX file.**
 
+Yoy may want to use any of `ejemplo-articulo-regular-en.tex`, `ejemplo-articulo-regular-es.tex`, `ejemplo-relevante-revista.tex` or `ejemplo-relevante-congreso.tex` as a starting point for your contribution.
+
 ## Repository contents
 
 This repository consists of the following files:
