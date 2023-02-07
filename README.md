@@ -3,7 +3,7 @@
 This LaTeX template should be used for the camera ready version of papers to be published in the [Sistedes Digital Library](https://biblioteca.sistedes.es).
 
 The `sistedes` LaTeX class does not modify the LLNCS class definition, but instead, it relies on it without modifying any source files.
-The `sistedes` LaTeX class is licensed under the same terms than the LLNCS LaTeX class file (CC BY-SA 4.0).
+The `sistedes` LaTeX class is licensed under the same terms than the LLNCS LaTeX class file (CC BY 4.0).
 
 ## How to use this template?
 
@@ -12,7 +12,6 @@ If your LaTeX distribution already contains the `llncs` LaTeX class among its pr
 Otherwise, copy all three files `sistedes.cls`, `llncs.cls` and `splncs04.bst` in a directory that is searched by LaTeX, e.g. either your texmf tree or the local directory with your main LaTeX file and use the `\documentclass[runningheads]{sistedes}` LaTeX command similarly.
 
 Yoy may want to use any of `ejemplo-articulo-regular-en.tex`, `ejemplo-articulo-regular-es.tex`, `ejemplo-relevante-revista.tex` or `ejemplo-relevante-congreso.tex` as a starting point for your contribution.
-
 ## Repository contents
 
 This repository consists of the following files:
@@ -30,5 +29,5 @@ This repository consists of the following files:
 * `ejemplo-relevante-revista.pdf`: Example file demonstrating the submission of the abstract and metadata of an already published (in a journal) relevant paper (result).
 * `ejemplo-relevante-congreso.tex`: Example file demonstrating the submission of the abstract and metadata of an already published (in a conference) relevant paper (sources).
 * `ejemplo-relevante-congreso.pdf`: Example file demonstrating the submission of the abstract and metadata of an already published (in a conference) relevant paper (result).
-* `LICENSE.txt`: The license file (CC BY-SA 4.0).
+* `LICENSE.txt`: The license file (CC BY 4.0).
 
