@@ -30,11 +30,12 @@
  \def\solutionname{Soluci\'on}%
  \def\theoremname{Teorema}%
 }{}
+\makeatother%
 }
 
 % Configure watermark
 \RequirePackage[usenames,dvipsnames]{xcolor}
-\RequirePackage{pdfx}
+\RequirePackage[a-1b]{pdfx}
 \RequirePackage[type={CC}, modifier={by-nc-nd}, version={4.0}]{doclicense}
 \RequirePackage{draftwatermark}
 \AtBeginDocument{
@@ -45,6 +46,9 @@
 \begin{minipage}{\dimexpr\paperwidth-2em}\scriptsize\fontfamily{phv}\selectfont
 \mbox{\doclicenseLongText}\hfill\doclicenseImage[imagewidth=7em]
 \end{minipage}}}
+
+% Setup some basic metadata
+\hypersetup{pdftitle={\@title},pdfauthor={\@author}}%
 
 % Macros for relevant papers
 \providecommand{\publishedin}[1]{
