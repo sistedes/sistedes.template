@@ -9,7 +9,7 @@ This LaTeX template should be used for the camera ready version of papers to be 
 
 **Simple!** Just add a copy of `sistedes.cls` to your existing files (next to your main LaTeX file) and change the `\documentclass[...]{llncs}` LaTeX command to `\documentclass{sistedes}` at the beginning of your document.
 
-Everything should just compile and work out of the box.
+Everything should just compile and work out of the box. If you get compile errors, double check the packages you load in your project and their options (e.g., `xcolor`).
 
 ### I use **[Overleaf](https://www.overleaf.com)** and I want to start from scratch
 
