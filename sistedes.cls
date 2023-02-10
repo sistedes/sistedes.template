@@ -33,9 +33,27 @@
 \makeatother%
 }
 
-% Configure watermark
-\RequirePackage[usenames,dvipsnames]{xcolor}
-\RequirePackage[a-1b]{pdfx}
+% Setup hyperref, so that metadata is correctly set
+% Produce PDF/A documents, since these docuemtns are meant to be archived 
+% in the Sistedes digital library
+% Also \clearheadinfo needs to be overriden, so that title and authors are
+% set before they are cleared
+\RequirePackage[rgb,hyperref,usenames,dvipsnames]{xcolor}
+\RequirePackage{hyperxmp}
+\RequirePackage[pdfa,pdfapart=1,pdfaconformance=b]{hyperref}
+\let\original@clearheadinfo\clearheadinfo
+\def\clearheadinfo{%
+  \def\thanks##1{}%
+  \let\sistedes@title\@title%
+  \def\and{\unskip, }%
+  \def\inst##1{}%
+  \def\orcidID##1{}% 
+  \let\sistedes@author\@author
+  \hypersetup{pdftitle={\sistedes@title},pdfauthor={\sistedes@author}}%
+  \original@clearheadinfo%
+}
+
+% Configure watermark with the license
 \RequirePackage[type={CC}, modifier={by-nc-nd}, version={4.0}]{doclicense}
 \RequirePackage{draftwatermark}
 \AtBeginDocument{
@@ -46,9 +64,6 @@
 \begin{minipage}{\dimexpr\paperwidth-2em}\scriptsize\fontfamily{phv}\selectfont
 \mbox{\doclicenseLongText}\hfill\doclicenseImage[imagewidth=7em]
 \end{minipage}}}
-
-% Setup some basic metadata
-\hypersetup{pdftitle={\@title},pdfauthor={\@author}}%
 
 % Macros for relevant papers
 \providecommand{\publishedin}[1]{
@@ -62,3 +77,5 @@
 
 % Other imports
 \RequirePackage{lipsum}
+
+
