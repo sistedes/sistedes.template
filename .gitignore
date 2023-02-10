@@ -6,3 +6,4 @@ sharelatex-git
 *.log
 *.out
 *-eps-converted-to.pdf
+*.zip
