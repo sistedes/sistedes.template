@@ -9,16 +9,18 @@ This LaTeX template should be used for the camera ready version of papers to be 
 
 Great! Just simply use any of the available templates!:
 
-* Sistedes regular paper (English): https://www.overleaf.com/latex/templates/sistedes-regular-paper-english/zvvwsdxpfgrr
-* Sistedes regular paper (Spanish): https://www.overleaf.com/latex/templates/sistedes-regular-paper-spanish/qcfpycfdwxqw
-* Sistedes relevant journal paper (English): https://www.overleaf.com/latex/templates/sistedes-relevant-journal-paper-abstract-english/hvtjqnnnnnqc
-* Sistedes relevant conference paper (English): https://www.overleaf.com/latex/templates/sistedes-relevant-conference-paper-abstract-english/djtvkcnpzjpp
+* [Sistedes regular paper (English)](https://www.overleaf.com/latex/templates/sistedes-regular-paper-english/zvvwsdxpfgrr)
+* [Sistedes regular paper (Spanish)](https://www.overleaf.com/latex/templates/sistedes-regular-paper-spanish/qcfpycfdwxqw)
+* [Sistedes relevant journal paper (English)](https://www.overleaf.com/latex/templates/sistedes-relevant-journal-paper-abstract-english/hvtjqnnnnnqc)
+* [Sistedes relevant conference paper (English)](https://www.overleaf.com/latex/templates/sistedes-relevant-conference-paper-abstract-english/djtvkcnpzjpp)
 
 ### I use my own LaTeX environment
 
-If your LaTeX distribution is modern enough, and already contains the `llncs` LaTeX class among its pre-installed packages, simply put a copy of `sistedes.cls` together with your main LaTeX file and use the `\documentclass[runningheads]{sistedes}` LaTeX command at the beginning of your document.
+1. If your LaTeX distribution is modern enough, and already contains the `llncs` LaTeX class among its pre-installed packages, simply put a copy of `sistedes.cls` together with your main LaTeX file and use the `\documentclass{sistedes}` LaTeX command at the beginning of your document.
 
-Otherwise, copy all three files `sistedes.cls`, `llncs.cls` and `splncs04.bst` in a directory that is searched by LaTeX, e.g. either your texmf tree or the local directory with your main LaTeX file and use the `\documentclass[runningheads]{sistedes}` LaTeX command similarly.
+Otherwise:
+
+2. Copy all three files `sistedes.cls`, `llncs.cls` and `splncs04.bst` in a directory that is searched by LaTeX (e.g., the local directory with your main LaTeX file) and use the `\documentclass{sistedes}` LaTeX command similarly.
 
 Yoy may want to use any of `ejemplo-articulo-regular-en.tex`, `ejemplo-articulo-regular-es.tex`, `ejemplo-relevante-revista.tex` or `ejemplo-relevante-congreso.tex` as a starting point for your contribution.
 
@@ -52,4 +54,4 @@ This repository consists of the following files:
 * `ejemplo-relevante-congreso.tex`: Example file demonstrating the submission of the abstract and metadata of an already published (in a conference) relevant paper (sources).
 * `ejemplo-relevante-congreso.pdf`: Example file demonstrating the submission of the abstract and metadata of an already published (in a conference) relevant paper (result).
 * `LICENSE.txt`: The license file (CC BY 4.0).
-
+* `README.md`: This file.
