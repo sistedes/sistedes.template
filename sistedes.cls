@@ -6,7 +6,7 @@
 \ProvidesClass{sistedes}[2023/02/07 v1.0
 ^^J LaTeX document class for the Sistedes Digital Library]
 
-\LoadClass[twoside]{llncs}
+\LoadClass[twoside, runningheads]{llncs}
 
 % Add some translations when babel in Spanish is loaded
 \AtBeginDocument{%
