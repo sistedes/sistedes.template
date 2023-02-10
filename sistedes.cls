@@ -63,6 +63,19 @@
   \endgroup
 }
 
+\let\original@maketitle\maketitle
+\def\maketitle{%
+  \original@maketitle
+  \let\original@keywords\keywords
+  \renewcommand{\keywords}[1]{%
+    \begingroup
+    \original@keywords{##1}%
+    \def\and{\unskip, }%
+    \def\sistedes@keywords{##1}%
+    \hypersetup{pdfkeywords={\sistedes@keywords}}%
+    \endgroup
+  }
+}
 
 % Configure watermark with the license
 \RequirePackage[type={CC}, modifier={by-nc-nd}, version={4.0}]{doclicense}

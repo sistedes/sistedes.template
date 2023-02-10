@@ -39,7 +39,7 @@ This `sistedes` class implements the following extensions with respect to LLNCS:
 
 * It always adds a watermark at the bottom of the page specifying the [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) license, as required for publications in the Sistedes Digital Library.
 * It produces PDF/A documents to improve portability, since papers are aimed to be permanently archived in the Sistedes Digital Library.
-* It automatically sets the document metadata in the produced PDF (authors, title, and license).
+* It automatically sets the document metadata in the produced PDF (authors, title, keywords, and license).
 * It provides some custom commands to easily typeset the "relevant paper" special type of submission.
 
 ## Repository contents
