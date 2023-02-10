@@ -15,8 +15,8 @@ Everything should just compile and work out of the box. If you get compile error
 
 Great! Just use any of the available templates!:
 
-* [Sistedes regular paper (English)](https://www.overleaf.com/latex/templates/sistedes-regular-paper-english/zvvwsdxpfgrr)
 * [Sistedes regular paper (Spanish)](https://www.overleaf.com/latex/templates/sistedes-regular-paper-spanish/qcfpycfdwxqw)
+* [Sistedes regular paper (English)](https://www.overleaf.com/latex/templates/sistedes-regular-paper-english/zvvwsdxpfgrr)
 * [Sistedes relevant journal paper (English)](https://www.overleaf.com/latex/templates/sistedes-relevant-journal-paper-abstract-english/hvtjqnnnnnqc)
 * [Sistedes relevant conference paper (English)](https://www.overleaf.com/latex/templates/sistedes-relevant-conference-paper-abstract-english/djtvkcnpzjpp)
 
