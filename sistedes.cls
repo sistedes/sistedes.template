@@ -43,20 +43,24 @@
 \RequirePackage[pdfa,pdfapart=1,pdfaconformance=b]{hyperref}
 \let\original@title\title
 \renewcommand{\title}[1]{%
+  \begingroup
   \original@title{#1}%
   \def\thanks##1{}%
   \def\sistedes@title{#1}%
   \hypersetup{pdftitle={\sistedes@title}}%
+  \endgroup
 }
 
 \let\original@author\author
 \renewcommand{\author}[1]{%
+  \begingroup
   \original@author{#1}%
   \def\and{\unskip, }%
   \def\inst##1{}%
   \def\orcidID##1{}% 
   \def\sistedes@author{#1}%
   \hypersetup{pdfauthor={\sistedes@author}}%
+  \endgroup
 }
 
 
