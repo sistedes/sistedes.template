@@ -38,7 +38,7 @@
 % in the Sistedes digital library
 % Also \clearheadinfo needs to be overriden, so that title and authors are
 % set before they are cleared
-\RequirePackage[rgb,hyperref,usenames,dvipsnames]{xcolor}
+\RequirePackage[rgb,hyperref,usenames,dvipsnames,table]{xcolor}
 \RequirePackage{hyperxmp}
 \RequirePackage[pdfa,pdfapart=1,pdfaconformance=b]{hyperref}
 \let\original@clearheadinfo\clearheadinfo
