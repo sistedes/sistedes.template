@@ -5,9 +5,15 @@ This LaTeX template should be used for the camera ready version of papers to be 
 
 ## How to use this template?
 
-### I use **[Overleaf](https://www.overleaf.com)**!
+### I already have a paper formatted using the LLNCS class file
 
-Great! Just simply use any of the available templates!:
+**Simple!** Just add a copy of `sistedes.cls` to your existing files (next to your main LaTeX file) and change the `\documentclass[...]{llncs}` LaTeX command to `\documentclass{sistedes}` at the beginning of your document.
+
+Everything should just compile and work out of the box.
+
+### I use **[Overleaf](https://www.overleaf.com)** and I want to start from scratch
+
+Great! Just use any of the available templates!:
 
 * [Sistedes regular paper (English)](https://www.overleaf.com/latex/templates/sistedes-regular-paper-english/zvvwsdxpfgrr)
 * [Sistedes regular paper (Spanish)](https://www.overleaf.com/latex/templates/sistedes-regular-paper-spanish/qcfpycfdwxqw)
