@@ -36,22 +36,29 @@
 % Setup hyperref, so that metadata is correctly set
 % Produce PDF/A documents, since these docuemtns are meant to be archived 
 % in the Sistedes digital library
-% Also \clearheadinfo needs to be overriden, so that title and authors are
-% set before they are cleared
+% Also \author and \title need to be overriden, so that they can be stored
+% before they are cleared, and as such can be further reused
 \RequirePackage[rgb,hyperref,usenames,dvipsnames,table]{xcolor}
 \RequirePackage{hyperxmp}
 \RequirePackage[pdfa,pdfapart=1,pdfaconformance=b]{hyperref}
-\let\original@clearheadinfo\clearheadinfo
-\def\clearheadinfo{%
+\let\original@title\title
+\renewcommand{\title}[1]{%
+  \original@title{#1}%
   \def\thanks##1{}%
-  \let\sistedes@title\@title%
+  \def\sistedes@title{#1}%
+  \hypersetup{pdftitle={\sistedes@title}}%
+}
+
+\let\original@author\author
+\renewcommand{\author}[1]{%
+  \original@author{#1}%
   \def\and{\unskip, }%
   \def\inst##1{}%
   \def\orcidID##1{}% 
-  \let\sistedes@author\@author
-  \hypersetup{pdftitle={\sistedes@title},pdfauthor={\sistedes@author}}%
-  \original@clearheadinfo%
+  \def\sistedes@author{#1}%
+  \hypersetup{pdfauthor={\sistedes@author}}%
 }
+
 
 % Configure watermark with the license
 \RequirePackage[type={CC}, modifier={by-nc-nd}, version={4.0}]{doclicense}
