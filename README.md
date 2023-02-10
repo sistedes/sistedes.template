@@ -2,22 +2,44 @@
 
 This LaTeX template should be used for the camera ready version of papers to be published in the [Sistedes Digital Library](https://biblioteca.sistedes.es).
 
-The `sistedes` LaTeX class does not modify the LLNCS class definition, but instead, it relies on it without modifying any source files.
-The `sistedes` LaTeX class is licensed under the same terms than the LLNCS LaTeX class file (CC BY 4.0).
 
 ## How to use this template?
 
-If your LaTeX distribution already contains the `llncs` LaTeX class among its pre-installed packages (because, for instance, you are using [Overleaf](https://overleaf.com)), simply put a copy of `sistedes.cls` together  with your main LaTeX file and use the `\documentclass[runningheads]{sistedes}` LaTeX command at the beginning of your document.
+### I use **[Overleaf](https://www.overleaf.com)**!
+
+Great! Just simply use any of the available templates!:
+
+* Sistedes regular paper (English): https://www.overleaf.com/latex/templates/sistedes-regular-paper-english/zvvwsdxpfgrr
+* Sistedes regular paper (Spanish): https://www.overleaf.com/latex/templates/sistedes-regular-paper-spanish/qcfpycfdwxqw
+* Sistedes relevant journal paper (English): https://www.overleaf.com/latex/templates/sistedes-relevant-journal-paper-abstract-english/hvtjqnnnnnqc
+* Sistedes relevant conference paper (English): https://www.overleaf.com/latex/templates/sistedes-relevant-conference-paper-abstract-english/djtvkcnpzjpp
+
+### I use my own LaTeX environment
+
+If your LaTeX distribution is modern enough, and already contains the `llncs` LaTeX class among its pre-installed packages, simply put a copy of `sistedes.cls` together with your main LaTeX file and use the `\documentclass[runningheads]{sistedes}` LaTeX command at the beginning of your document.
 
 Otherwise, copy all three files `sistedes.cls`, `llncs.cls` and `splncs04.bst` in a directory that is searched by LaTeX, e.g. either your texmf tree or the local directory with your main LaTeX file and use the `\documentclass[runningheads]{sistedes}` LaTeX command similarly.
 
 Yoy may want to use any of `ejemplo-articulo-regular-en.tex`, `ejemplo-articulo-regular-es.tex`, `ejemplo-relevante-revista.tex` or `ejemplo-relevante-congreso.tex` as a starting point for your contribution.
+
+## What does this template provide?
+
+The `sistedes` LaTeX class relies on the the [LLNCS class definition](https://ctan.org/pkg/llncs), but without modifying any source files. Instead, it is implemented as an extension that imports the standard LLNCS class.
+The `sistedes` LaTeX class is licensed under the same terms than the LLNCS LaTeX class file (CC BY 4.0).
+
+This `sistedes` class implements the following extensions with respect to LLNCS:
+
+* It always adds a watermark at the bottom of the page specifying the [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) license, as required for publications in the Sistedes Digital Library.
+* It produces PDF/A documents to improve portability, since papers are aimed to be permanently archived in the Sistedes Digital Library.
+* It automatically sets the document metadata in the produced PDF (authors, title, and license).
+* It provides some custom commands to easily typeset the "relevant paper" special type of submission.
+
 ## Repository contents
 
 This repository consists of the following files:
 
 * `sistedes.cls`: main class file for the Sistedes digital library LaTeX template.
-* `llncs` directory: contains an unmodified copy of the LLNCS template, as published at [CTAN](https://ctan.org/pkg/llncs) under the [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) license.
+* `llncs` directory: contains an unmodified copy of the LLNCS template, as published at [CTAN](https://ctan.org/pkg/llncs) under the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) license.
 * `llncs.cls`: an unmodified copy of the LLNCS LaTeX document class in the `llncs` directory (required by the `sistedes.cls` class file).
 * `splncs04.bst`: an unmodified copy of the BibTeX bibliografy style template for LLNCS (required, if using _BibTex_).
 * `fig1.eps`: example image file, as made available at the [Information for Authors of Springer Computer Science Proceedings](https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines) site.
