@@ -55,3 +55,7 @@ This repository consists of the following files:
 * `ejemplo-relevante-congreso.pdf`: Example file demonstrating the submission of the abstract and metadata of an already published (in a conference) relevant paper (result).
 * `LICENSE.txt`: The license file (CC BY 4.0).
 * `README.md`: This file.
+
+## Any issues using this template?
+
+Just post [an issue](https://github.com/sistedes/sistedes.cls/issues) and let us know!
