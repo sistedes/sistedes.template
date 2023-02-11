@@ -226,7 +226,7 @@ stream
       </dc:rights>
       <dc:date>
         <rdf:Seq>
-          <rdf:li>2023-02-11T00:30:42+01:00</rdf:li>
+          <rdf:li>2023-02-11T01:38:01+01:00</rdf:li>
         </rdf:Seq>
       </dc:date>
       <dc:type>
@@ -250,14 +250,14 @@ stream
         </rdf:Bag>
       </dc:subject>
       <dc:source>ejemplo-relevante-revista.tex</dc:source>
-      <xmp:CreateDate>2023-02-11T00:30:42+01:00</xmp:CreateDate>
-      <xmp:ModifyDate>2023-02-11T00:30:42+01:00</xmp:ModifyDate>
-      <xmp:MetadataDate>2023-02-11T00:30:42+01:00</xmp:MetadataDate>
+      <xmp:CreateDate>2023-02-11T01:38:01+01:00</xmp:CreateDate>
+      <xmp:ModifyDate>2023-02-11T01:38:01+01:00</xmp:ModifyDate>
+      <xmp:MetadataDate>2023-02-11T01:38:01+01:00</xmp:MetadataDate>
       <xmp:CreatorTool>LaTeX with hyperref</xmp:CreatorTool>
       <pdfaid:part>1</pdfaid:part>
       <pdfaid:conformance>B</pdfaid:conformance>
       <xmpMM:DocumentID>uuid:4620a3ea-8200-4005-81d1-8d18dc90a333</xmpMM:DocumentID>
-      <xmpMM:InstanceID>uuid:05fd759b-1d1d-4188-a0a3-3ef2bb1333ef</xmpMM:InstanceID>
+      <xmpMM:InstanceID>uuid:7f200590-05fd-47a8-8205-f26ce418d75f</xmpMM:InstanceID>
       <xmpMM:VersionID>1</xmpMM:VersionID>
       <xmpMM:RenditionClass>default</xmpMM:RenditionClass>
       <prism:complianceProfile>three</prism:complianceProfile>
@@ -941,8 +941,8 @@ endobj
 80 0 obj
 <<
 /Title(Contribution Title)/Subject()/Creator(LaTeX with hyperref)/Producer(pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) kpathsea version 6.3.2)
-/CreationDate (D:20230211003042+01'00')
-/ModDate (D:20230211003042+01'00')
+/CreationDate (D:20230211013801+01'00')
+/ModDate (D:20230211013801+01'00')
 /Trapped /False
 /PTEX.Fullbanner (This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) kpathsea version 6.3.2)
 >>
@@ -980,7 +980,7 @@ endobj
 /W [1 3 1]
 /Root 79 0 R
 /Info 80 0 R
-/ID [<48957BBBB3D032B1F0F30E46DA1336F2> <48957BBBB3D032B1F0F30E46DA1336F2>]
+/ID [<F0A4B76080226C7CAD1EE662F00634BD> <F0A4B76080226C7CAD1EE662F00634BD>]
 /Length 223       
 /Filter /FlateDecode
 >>
