@@ -20,6 +20,8 @@ Great! Just use any of the available templates!:
 * [Sistedes relevant journal paper (English)](https://www.overleaf.com/latex/templates/sistedes-relevant-journal-paper-abstract-english/hvtjqnnnnnqc)
 * [Sistedes relevant conference paper (English)](https://www.overleaf.com/latex/templates/sistedes-relevant-conference-paper-abstract-english/djtvkcnpzjpp)
 
+**NOTE:** the above templates may be outdated (the process to update them in Overleaf is a bit cumbersome). If you want to make sure you're using the latest version, replace the `sistedes.cls` file in your Overleaf project with the [following file](https://github.com/sistedes/sistedes.cls/raw/master/sistedes.cls).
+
 ### I use my own LaTeX environment
 
 1. If your LaTeX distribution is modern enough, and already contains the `llncs` LaTeX class among its pre-installed packages, simply put a copy of `sistedes.cls` together with your main LaTeX file and use the `\documentclass{sistedes}` LaTeX command at the beginning of your document.
@@ -29,6 +31,10 @@ Otherwise:
 2. Copy all three files `sistedes.cls`, `llncs.cls` and `splncs04.bst` in a directory that is searched by LaTeX (e.g., the local directory with your main LaTeX file) and use the `\documentclass{sistedes}` LaTeX command similarly.
 
 Yoy may want to use any of `ejemplo-articulo-regular-en.tex`, `ejemplo-articulo-regular-es.tex`, `ejemplo-relevante-revista.tex` or `ejemplo-relevante-congreso.tex` as a starting point for your contribution.
+
+### I prefer Microsoft Word!
+
+Ouch! We prefer papers produced using LaTeX. In any case, if you want to write your paper in Word, use any of the templates available in the [`msword`](msword) directory.
 
 ## What does this template provide?
 
