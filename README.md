@@ -32,9 +32,9 @@ Otherwise:
 
 Yoy may want to use any of `ejemplo-articulo-regular-en.tex`, `ejemplo-articulo-regular-es.tex`, `ejemplo-relevante-revista.tex` or `ejemplo-relevante-congreso.tex` as a starting point for your contribution.
 
-### I prefer Microsoft Word!
+### I use Microsoft **Word**! 
 
-Ouch! We prefer papers produced using LaTeX. In any case, if you want to write your paper in Word, use any of the templates available in the [`msword`](msword) directory.
+If you prefer to write your paper in Word (ouch! 😄), you can use any of the templates available in the [`msword`](msword) directory.
 
 ## What does this template provide?
 
