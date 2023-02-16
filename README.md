@@ -1,9 +1,9 @@
-# Sistedes Digital Library LaTeX template
+# Sistedes Digital Library templates
 
-This LaTeX template should be used for the camera ready version of papers to be published in the [Sistedes Digital Library](https://biblioteca.sistedes.es).
+This repository contains the templates to be used for the camera ready version of papers to be published in the [Sistedes Digital Library](https://biblioteca.sistedes.es).
 
 
-## How to use this template?
+## How to use these templates?
 
 ### I already have a paper formatted using the LLNCS class file
 
