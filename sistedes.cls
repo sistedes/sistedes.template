@@ -1,9 +1,15 @@
-% SISTEDES DOCUMENT CLASS -- version 1.0 (07-Feb-2023)
+% SISTEDES DOCUMENT CLASS -- version 1.1 (14-Jun-2023)
 % Sistedes template for LaTeX2e, based on Lecture Notes in Computer Science
 %
+% Changelog:
+%
+% * v1.1 (14-Jun-2023):
+%   - Add an embedded version of `orcidlink`
+% * v1.0 (07-Feb-2023):
+%   - Initial version
 
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{sistedes}[2023/02/07 v1.0
+\ProvidesClass{sistedes}[2023/06/14 v1.1
 ^^J LaTeX document class for the Sistedes Digital Library]
 
 \LoadClass[twoside, runningheads]{llncs}
@@ -102,4 +108,42 @@
 % Other imports
 \RequirePackage{lipsum}
 
+% Below we include a stripped and modified version of `orcidlink.sty` as available at
+% https://github.com/duetosymmetry/orcidlink-LaTeX-command
+% Copyright (C) 2020 by Leo C. Stein <leo.stein@gmail.com>
+% `orcidlink` may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% (See http://www.latex-project.org/lppl.txt)
+%
+% We include this embedded version of `orcidlink` (rather than importing it) 
+% to support old installations of LaTeX, since this package was made available
+% in CTAN in 2020-2021
+\RequirePackage{hyperref}
+\RequirePackage{tikz}
 
+\usetikzlibrary{svg.path}
+
+\definecolor{orcidlogocol}{HTML}{A6CE39}
+\tikzset{
+  orcidlogo/.pic={
+    \fill[orcidlogocol] svg{M256,128c0,70.7-57.3,128-128,128C57.3,256,0,198.7,0,128C0,57.3,57.3,0,128,0C198.7,0,256,57.3,256,128z};
+    \fill[white] svg{M86.3,186.2H70.9V79.1h15.4v48.4V186.2z}
+                 svg{M108.9,79.1h41.6c39.6,0,57,28.3,57,53.6c0,27.5-21.5,53.6-56.8,53.6h-41.8V79.1z M124.3,172.4h24.5c34.9,0,42.9-26.5,42.9-39.7c0-21.5-13.7-39.7-43.7-39.7h-23.7V172.4z}
+                 svg{M88.7,56.8c0,5.5-4.5,10.1-10.1,10.1c-5.6,0-10.1-4.6-10.1-10.1c0-5.6,4.5-10.1,10.1-10.1C84.2,46.7,88.7,51.3,88.7,56.8z};
+  }
+}
+\newcommand{\@OrigHeightRecip}{0.00390625}
+\newlength{\@curXheight}
+% We declare \orcidID{...} rather than \orcidlink{...} for backwards
+% compatiblity of the sistedes.cls class
+\DeclareRobustCommand\orcidID[1]{%
+\texorpdfstring{%
+\setlength{\@curXheight}{\fontcharht\font`X}%
+\href{https://orcid.org/#1}{\XeTeXLinkBox{\mbox{%
+\begin{tikzpicture}[yscale=-\@OrigHeightRecip*\@curXheight,
+xscale=\@OrigHeightRecip*\@curXheight,transform shape]
+\pic{orcidlogo};
+\end{tikzpicture}%
+}}}}{}}
+% End of `orcidlink`
