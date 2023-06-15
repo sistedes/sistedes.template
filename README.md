@@ -17,8 +17,7 @@ Great! Just use any of the available templates!:
 
 * [Sistedes regular paper (Spanish)](https://www.overleaf.com/latex/templates/sistedes-regular-paper-spanish/qcfpycfdwxqw)
 * [Sistedes regular paper (English)](https://www.overleaf.com/latex/templates/sistedes-regular-paper-english/zvvwsdxpfgrr)
-* [Sistedes relevant journal paper (English)](https://www.overleaf.com/latex/templates/sistedes-relevant-journal-paper-abstract-english/hvtjqnnnnnqc)
-* [Sistedes relevant conference paper (English)](https://www.overleaf.com/latex/templates/sistedes-relevant-conference-paper-abstract-english/djtvkcnpzjpp)
+* [Sistedes relevant paper (English)](https://www.overleaf.com/latex/templates/sistedes-relevant-paper-abstract-english/djtvkcnpzjpp)
 
 **NOTE:** the above templates may be outdated (the process to update them in Overleaf is a bit cumbersome). If you want to make sure you're using the latest version, replace the `sistedes.cls` file in your Overleaf project with the [following file](https://github.com/sistedes/sistedes.cls/raw/master/sistedes.cls).
 
@@ -30,7 +29,7 @@ Otherwise:
 
 2. Copy all three files `sistedes.cls`, `llncs.cls` and `splncs04.bst` in a directory that is searched by LaTeX (e.g., the local directory with your main LaTeX file) and use the `\documentclass{sistedes}` LaTeX command similarly.
 
-Yoy may want to use any of `ejemplo-articulo-regular-en.tex`, `ejemplo-articulo-regular-es.tex`, `ejemplo-relevante-revista.tex` or `ejemplo-relevante-congreso.tex` as a starting point for your contribution.
+Yoy may want to use any of `ejemplo-articulo-regular-en.tex`, `ejemplo-articulo-regular-es.tex`, or `ejemplo-articulo-relevante-en.tex` as a starting point for your contribution.
 
 ### I use Microsoft **Word**! 
 
@@ -61,10 +60,8 @@ This repository consists of the following files:
 * `ejemplo-articulo-regular-en.pdf`: Example file, showing a regular paper written in English (result).
 * `ejemplo-articulo-regular-es.tex`: Example file, showing a regular paper written in Spanish (sources).
 * `ejemplo-articulo-regular-es.pdf`: Example file, showing a regular paper written in Spanish (result).
-* `ejemplo-relevante-revista.tex`: Example file demonstrating the submission of the abstract and metadata of an already published (in a journal) relevant paper (sources).
-* `ejemplo-relevante-revista.pdf`: Example file demonstrating the submission of the abstract and metadata of an already published (in a journal) relevant paper (result).
-* `ejemplo-relevante-congreso.tex`: Example file demonstrating the submission of the abstract and metadata of an already published (in a conference) relevant paper (sources).
-* `ejemplo-relevante-congreso.pdf`: Example file demonstrating the submission of the abstract and metadata of an already published (in a conference) relevant paper (result).
+* `ejemplo-articulo-relevante-en.tex`: Example file demonstrating the submission of the abstract and metadata of an already published (in a conference or a journal) relevant paper (sources).
+* `ejemplo-articulo-relevante-en.pdf`: Example file demonstrating the submission of the abstract and metadata of an already published (in a conference or a journal) relevant paper (result).
 * `LICENSE.txt`: The license file (CC BY 4.0).
 * `README.md`: This file.
 
