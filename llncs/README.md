@@ -1,8 +1,8 @@
 # llncs
 
-_2022/09/05 v2.22_
+_2023/11/02 v2.23_
 
-Copyright (c) 1996-2022 Springer
+Copyright (c) 1996-2023 Springer
 
 Email: [lncs@springer.com](mailto:lncs@springer.com)
 

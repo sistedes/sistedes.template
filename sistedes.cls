@@ -3,6 +3,10 @@
 %
 % Changelog:
 %
+% * v1.2 (09-Nov-2023):
+%   - Remove duplicate RequirePackage{hyperref}
+%   - Ensure compatibility with llncs.cls 2.23
+%   - Add \ackname and \discintname translations
 % * v1.1 (14-Jun-2023):
 %   - Add an embedded version of `orcidlink`
 % * v1.0 (07-Feb-2023):
@@ -20,6 +24,8 @@
 \@ifpackagewith{babel}{spanish}%
 {%
  \input{doclicense-spanish.ldf}% Make make 'doclicense' load the Spanish strings
+ \def\ackname{Agradecimientos}%
+ \def\discintname{Declaración de intereses}%
  \def\conjecturename{Hip\'otesis}%
  \def\corollaryname{Corolario}%
  \def\definitionname{Definici\'on}%

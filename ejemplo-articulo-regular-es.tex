@@ -1,6 +1,6 @@
 % Este archivo es ejemplo-articulo-regular-es.tex, un capítulo
 % de ejemplo (en español) del paquete 'sistedes' para la
-% Biblioteca Digital de Sistedes; Version 1.0 de 07/02/2023
+% Biblioteca Digital de Sistedes; Version 1.2 of 2023/11/09
 %
 % Este paquete extiende el paquete LLNCS de Springer Computer
 % Science proceedings.
@@ -10,12 +10,6 @@
 
 \usepackage{graphicx}
 % Usado para mostrar la figura de ejemplo. 
-%
-% Si usa el paquete hyperref, elimine los comentarios de las
-% siguientes dos líneas para mostrar las URLs en fuente romana
-% azul de acuerdo con el estilo del libro electrónico de Springer:
-%\usepackage{color}
-%\renewcommand\UrlFont{\color{blue}\rmfamily}
 %
 \begin{document}
 %
@@ -49,8 +43,7 @@ Dummy Institute, Nowhere, Spain\\
 \maketitle              % Componer el encabezado de la contribución
 %
 \begin{abstract}
-El resumen debe resumir brevemente el contenido del trabajo 
-en~150--250 palabras.
+El resumen debe resumir brevemente el contenido del trabajo en~150--250 palabras.
 
 \keywords{primera palabra clave \and segunda palabra clave \and
 otra palabra clave}
@@ -82,7 +75,7 @@ Nivel de encabezado & Ejemplo & Tamaño y estilo\\
 Título (centrado) &  {\Large\bfseries Lecture Notes} & 14 pt, negrita\\
 Encabezado nivel 1 &  {\large\bfseries 1 Introduction} & 12 pt, negrita\\
 Encabezado nivel 2 & {\bfseries 2.1 Printing Area} & 10 pt, negrita\\
-Encabezado nivel 3 & {\bfseries Run-in Heading.} Texto a continuación & 10 pt, negrita\\
+Encabezado nivel 3 & {\bfseries Run-in Heading in Bold.} Texto a continuación & 10 pt, negrita\\
 Encabezado nivel 4 & {\itshape Lowest Level Heading.} Texto a continuación & 10 pt, cursiva\\
 \hline
 \end{tabular}
@@ -124,13 +117,23 @@ son aceptables. La siguiente bibliografía proporciona una lista de referencias
 de muestra con entradas para artículos de revistas~\cite{ref_article1},
 un capítulo de LNCS~\cite{ref_lncs1}, un libro~\cite{ref_book1},
 actas sin editores~\cite{ref_proc1}, y una página de inicio~\cite{ref_url1}.
-Las citas múltiples se han de agrupar~\cite{ref_article1,ref_lncs1,ref_book1},
-\cite{ref_article1,ref_book1,ref_proc1,ref_url1}.
+Las citas múltiples se han de agrupar~\cite{ref_article1,ref_lncs1,ref_book1},%
+~\cite{ref_article1,ref_book1,ref_proc1,ref_url1}.
 
-\subsubsection{Agradecimientos} Coloque sus agradecimientos al final del
-artículo, precedidos por un encabezado no numerado (es decir, encabezamiento
-de~3er nivel).
-
+\begin{credits}
+\subsubsection{\ackname} 
+Un encabezado en letra pequeña, negritas y con texto a continuación se usa
+para los agradecimiento generales, por ejemplo: Este estudio ha sido financiado
+por X (referencia número Y).
+\subsubsection{\discintname}
+Si es relevante, los autores pueden realizar una declaración de intereses o declarar
+específicamente que no tienen intereses. La declaración deberá indicarse con un encabezad
+en negrita en tamaño de fuente pequeño debajo de los agradecimientos (opcionales),
+por ejemplo: Los autores no tienen intereses en competencia que declarar que sean
+relevantes para el contenido de este artículo. O: el autor A ha recibido subvenciones
+de investigación de la empresa W. El autor B ha recibido honorarios como orador
+de la empresa X y posee acciones de la empresa Y. El autor C es miembro del comité Z.
+\end{credits}
 %
 % ---- Bibliografía ----
 %
@@ -158,7 +161,6 @@ Author, A.-B.: Contribution title. In: 9th International Proceedings
 on Proceedings, pp. 1--2. Publisher, Location (2010)
 
 \bibitem{ref_url1}
-LNCS Homepage, \url{http://www.springer.com/lncs}. Last accessed 4
-Oct 2017
+LNCS Homepage, \url{http://www.springer.com/lncs}, last accessed 2023/10/25
 \end{thebibliography}
 \end{document}

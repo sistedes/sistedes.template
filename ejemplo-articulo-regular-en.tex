@@ -1,18 +1,13 @@
 % This is ejemplo-articulo.tex, a sample chapter demonstrating the
 % 'sistedes' macro package for the Sistedes Digital Library;
-% Version 1.0 of 2023/02/07
+% Version 1.2 of 2023/11/09
 %
 % This package extends the LLNCS macro package for Springer Computer
 % Science proceedings
 \documentclass{sistedes}
 %
 \usepackage{graphicx}
-% Used for displaying a sample figure. 
-%
-% If you use the hyperref package, please uncomment the following two lines
-% to display URLs in blue roman font according to Springer's eBook style:
-%\usepackage{color}
-%\renewcommand\UrlFont{\color{blue}\rmfamily}
+% Used for displaying a sample figure.
 %
 \begin{document}
 %
@@ -46,8 +41,7 @@ Dummy Institute, Nowhere, Spain\\
 \maketitle              % typeset the header of the contribution
 %
 \begin{abstract}
-The abstract should briefly summarize the contents of the paper in
-150--250 words.
+The abstract should briefly summarize the contents of the paper in~150--250 words.
 
 \keywords{First keyword \and Second keyword \and Another keyword}
 \end{abstract}
@@ -81,7 +75,7 @@ Heading level &  Example & Font size and style\\
 Title (centered) &  {\Large\bfseries Lecture Notes} & 14 point, bold\\
 1st-level heading &  {\large\bfseries 1 Introduction} & 12 point, bold\\
 2nd-level heading & {\bfseries 2.1 Printing Area} & 10 point, bold\\
-3rd-level heading & {\bfseries Run-in Heading.} Text follows & 10 point, bold\\
+3rd-level heading & {\bfseries Run-in Heading in Bold.} Text follows & 10 point, bold\\
 4th-level heading & {\itshape Lowest Level Heading.} Text follows & 10 point, italic\\
 \hline
 \end{tabular}
@@ -101,7 +95,7 @@ Fig.~\ref{fig1}).
 \includegraphics[width=\textwidth]{fig1.eps}
 \caption{A figure caption is always placed below the illustration.
 Please note that short captions are centered, while long ones are
-justified by the macro package automatically.} \label{fig1}
+justified by the macro package automatically.}\label{fig1}
 \end{figure}
 
 \begin{theorem}
@@ -123,14 +117,22 @@ convention are also acceptable. The following bibliography provides
 a sample reference list with entries for journal
 articles~\cite{ref_article1}, an LNCS chapter~\cite{ref_lncs1}, a
 book~\cite{ref_book1}, proceedings without editors~\cite{ref_proc1},
-and a homepage~\cite{ref_url1}. Multiple citations are grouped
-\cite{ref_article1,ref_lncs1,ref_book1},
-\cite{ref_article1,ref_book1,ref_proc1,ref_url1}.
+and a homepage~\cite{ref_url1}. Multiple citations are
+grouped~\cite{ref_article1,ref_lncs1,ref_book1},~\cite{ref_article1,ref_book1,ref_proc1,ref_url1}.
 
-\subsubsection{Acknowledgements} Please place your acknowledgments at
-the end of the paper, preceded by an unnumbered run-in heading (i.e.
-3rd-level heading).
-
+\begin{credits}
+\subsubsection{\ackname} A bold run-in heading in small font size at the end of the paper is
+used for general acknowledgments, for example: This study was funded
+by X (grant number Y).
+\subsubsection{\discintname}
+Authors may want to declare any competing interests or to specifically
+state that the authors have no competing interests. Please place the
+statement with a bold run-in heading in small font size beneath the
+(optional) acknowledgments, for example: The authors have no competing interests to declare that are
+relevant to the content of this article. Or: Author A has received research
+grants from Company W. Author B has received a speaker honorarium from
+Company X and owns stock in Company Y. Author C is a member of committee Z.
+\end{credits}
 %
 % ---- Bibliography ----
 %
@@ -158,7 +160,6 @@ Author, A.-B.: Contribution title. In: 9th International Proceedings
 on Proceedings, pp. 1--2. Publisher, Location (2010)
 
 \bibitem{ref_url1}
-LNCS Homepage, \url{http://www.springer.com/lncs}. Last accessed 4
-Oct 2017
+LNCS Homepage, \url{http://www.springer.com/lncs}, last accessed 2023/10/25
 \end{thebibliography}
 \end{document}

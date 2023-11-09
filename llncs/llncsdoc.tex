@@ -1,6 +1,6 @@
 % This is LLNCSDOC.TEX the documentation file of
 % the LaTeX2e class from Springer-Verlag
-% for Lecture Notes in Computer Science, version 2.22
+% for Lecture Notes in Computer Science, version 2.23
 \documentclass{llncs}
 \usepackage{llncsdoc}
 \usepackage{graphicx}
@@ -8,16 +8,18 @@
 \usepackage[dvips,bookmarksopen]{hyperref}
 %
 \makeatletter\@twosidefalse\@mparswitchfalse\makeatother
+%
 \begin{document}
 \title{Instructions for Using Springer's \texttt{llncs} Class for
 Computer Science Proceedings Papers}
 %
-\subtitle{\texttt{llncs}, Version 2.22, Sep 05, 2022}
+\subtitle{\texttt{llncs}, Version 2.23, Nov 02, 2023}
 %
 \author{}
 \institute{}
 
 \maketitle \thispagestyle{empty}
+\markright{Instructions for Using Springer's \texttt{llncs} Class}
 %
 \section{Installation}
 %
@@ -335,6 +337,25 @@ environment, please use the syntax
 \spnewtheorem*{<env_nam>}{<caption>}{<cap_font>}{<body_font>}
 \end{verbatim}
 
+%
+\section{Credits and Acknowledgments}
+\label{credits}
+\DescribeEnv{credits}
+Credits and acknowledgments should be placed at the end of the paper, 
+just before the references. Please use the \verb|credits| environment 
+to make sure that both text and run-in headings are printed in small 
+font size. 
+
+\DescribeMacro{\ackname}\DescribeMacro{\discintname}
+There are two possible \verb|\subsubsection| headings to provide such
+statements: ``Acknowledgments'' and ``Disclosure of Interests''. 
+The \verb|\ackname| and \verb|\discintname| macros are used to generate 
+the correct run-in titles. 
+
+General acknowledgments can be provided in the (optional) paragraph 
+``Acknowledgments'', which is followed by the (mandatory) paragraph 
+``Disclosure of Interests'', where any competing interests of the authors 
+are to be declared. 
 
 
 %
@@ -381,8 +402,7 @@ file \verb|splncs04.bst| that comes with the \texttt{llncs} document class.
 You simply need to add \verb|\bibliographystyle{splncs04}| to your
 document. DOIs should be provided in the doi field of your .bib
 database. {\sc Bib}\TeX{} will then automatically add them to your
-references. Please note that we do not provide an option to
-implement
+references.
 
 \DescribeMacro{\doi}If you do not use {\sc Bib}\TeX{}, you can
 include a DOI with the \verb|\doi| command:
