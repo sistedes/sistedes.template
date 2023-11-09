@@ -119,7 +119,6 @@
 % We include this embedded version of `orcidlink` (rather than importing it) 
 % to support old installations of LaTeX, since this package was made available
 % in CTAN in 2020-2021
-\RequirePackage{hyperref}
 \RequirePackage{tikz}
 
 \usetikzlibrary{svg.path}
