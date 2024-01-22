@@ -1,8 +1,11 @@
-% SISTEDES DOCUMENT CLASS -- version 1.1 (14-Jun-2023)
+% SISTEDES DOCUMENT CLASS -- version 1.3 (22-Jan-2024)
 % Sistedes template for LaTeX2e, based on Lecture Notes in Computer Science
 %
 % Changelog:
 %
+% * v1.3 (22-Jan-2024):
+%   - Reorder hyperxmp and hyperref imports due to breaking changes 
+%     in hyperxmp 5.12
 % * v1.2 (09-Nov-2023):
 %   - Remove duplicate RequirePackage{hyperref}
 %   - Ensure compatibility with llncs.cls 2.23
@@ -13,7 +16,7 @@
 %   - Initial version
 
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{sistedes}[2023/06/14 v1.1
+\ProvidesClass{sistedes}[2024/01/22 v1.3
 ^^J LaTeX document class for the Sistedes Digital Library]
 
 \LoadClass[twoside, runningheads]{llncs}
