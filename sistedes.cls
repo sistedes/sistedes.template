@@ -51,8 +51,8 @@
 % Also \author and \title need to be overriden, so that they can be stored
 % before they are cleared, and as such can be further reused
 \RequirePackage[rgb,hyperref,usenames,dvipsnames,table]{xcolor}
+\RequirePackage[pdfa]{hyperref}
 \RequirePackage{hyperxmp}
-\RequirePackage[pdfa,pdfapart=1,pdfaconformance=b]{hyperref}
 \let\original@title\title
 \renewcommand{\title}[1]{%
   \begingroup
